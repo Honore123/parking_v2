@@ -16,7 +16,8 @@ class TemperatureDataController extends Controller
 
     public function store($data){
         TemperatureData::create([
-            'temperature_data' => $data
+            'temperature_data' => $data,
+            'recorded_at' => now()
         ]);
     }
 }

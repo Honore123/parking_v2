@@ -9,5 +9,5 @@ class CarbonDioxide extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['carbon_data'];
+    protected $fillable = ['carbon_data','recorded_at'];
 }

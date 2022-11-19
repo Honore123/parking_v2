@@ -15,7 +15,8 @@ class CarbonDioxideController extends Controller
     }
     public function store($data){
         CarbonDioxide::create([
-            'carbon_data' => $data
+            'carbon_data' => $data,
+            'recorded_at' => now(),
         ]);
     }
 }

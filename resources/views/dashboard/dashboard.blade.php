@@ -65,7 +65,7 @@
                     data: {
                         labels:dateTime,
                         datasets: [{
-                            label: 'Temperature',
+                            label: 'Temperature (Celsius)',
                             data: temperature,
                             borderWidth: 3,
                             borderColor: 'rgb(0, 127, 212)',
@@ -111,7 +111,7 @@
                     data: {
                         labels:dateTimeCarbon,
                         datasets: [{
-                            label: 'Carbon Level',
+                            label: 'Carbon Level (PPM)',
                             data: carbonDioxide,
                             borderWidth: 3,
                             borderColor: 'rgb(214, 42, 67)',

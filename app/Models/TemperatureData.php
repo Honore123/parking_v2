@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class TemperatureData extends Model
 {
     use HasFactory;
-    protected $fillable = ['temperature_data'];
+    protected $fillable = ['temperature_data', 'recorded_at'];
 }
