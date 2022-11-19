@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="{{asset('custom/css/vertical-layout-light/style.css')}}">
         <!-- endinject -->
         <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
+        @stack('styles')
     </head>
     <body>
         <div class="container-scroller">
@@ -60,5 +61,6 @@
         <script src="{{asset('custom/js/dashboard.js')}}"></script>
         <script src="js/Chart.roundedBarCharts.js"></script>
         <!-- End custom js for this page-->
+        @stack('scripts')
     </body>
 </html>
