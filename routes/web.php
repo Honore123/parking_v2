@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CarbonDioxideController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EntranceController;
 use App\Http\Controllers\ParkingSpaceController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\TemperatureDataController;
@@ -42,5 +43,7 @@ Route::middleware(['auth', 'verified'])->group(function() {
 Route::get('temperature/device/{data}', [TemperatureDataController::class, 'store']);
 Route::get('carbon/device/{data}', [CarbonDioxideController::class, 'store']);
 Route::get('parking/availability/{space}/{data}', [ParkingSpaceController::class, 'update']);
+Route::get('door/open', [EntranceController::class, 'doorOpen']);
+Route::get('door/close', [EntranceController::class, 'doorClose']);
 
 require __DIR__.'/auth.php';

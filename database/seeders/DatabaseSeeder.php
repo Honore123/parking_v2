@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UserSeeder::class);
         $this->call(SpaceSeeder::class);
+        $this->call(DriverSeeder::class);
+        $this->call(EntranceSeeder::class);
     }
 }

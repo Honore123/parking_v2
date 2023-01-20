@@ -19,5 +19,7 @@ class TemperatureDataController extends Controller
             'temperature_data' => $data,
             'recorded_at' => now()
         ]);
+
+        echo $data;
     }
 }
